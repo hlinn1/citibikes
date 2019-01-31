@@ -3,6 +3,16 @@ body {
     margin: 0;
   }
 
-.navbar-img {
-    size: 1px;
+.navbar {
+    background-color: paleturquoise;
+}
+
+#desc-text {
+    margin-top: 20px;
+}
+
+.tableauPlaceholder {
+    padding: 10px;
+    margin: 10px;
+    margin-left: 20px;
 }

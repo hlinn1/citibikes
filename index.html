@@ -8,40 +8,81 @@
   <meta name="description" content="Citi Bike Vizzes">
   <meta name="author" content="hlinn1">
 
-  <link rel="stylesheet" href="static/css/styles.css?v=1.0">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container">
-        <!-- nav bar -->
-        <nav class="navbar navbar-light bg-light">
-            <span class="navbar-brand h1"><img class="navbar-img d-inline-block" src="resources/img/logo.png" alt="CitiBike logo" width="60" height="45" /img>CitiBike Tableau Visualizations</span>
-        </nav>
+    <!-- nav bar -->
+    <nav class="navbar navbar-light">
+        <span class="navbar-brand h1"><img class="navbar-img d-inline-block" src="resources/img/logo.png" alt="CitiBike logo" width="85" height="65" /img>CitiBike with Tableau!</span>
+    </nav>
 
-        <!-- embedding Tableau viz -->
-        <div class='tableauPlaceholder' id='viz1548909268701' style='position: relative'>
-            <noscript>
-                <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYCitiBikes2018Q1&#47;Dashboard1&#47;1_rss.png' style='border: none' />
-                </a>
-            </noscript>
-            <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-            <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NYCitiBikes2018Q1&#47;Dashboard1' />
-            <param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYCitiBikes2018Q1&#47;Dashboard1&#47;1.png' /> 
-            <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' />
-            </object>
-        </div>                
-        <script type='text/javascript'>                    
-            var divElement = document.getElementById('viz1548909268701');                    
-            var vizElement = divElement.getElementsByTagName('object')[0];                    
-            vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';
-            vizElement.style.maxHeight='887px';
-            vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
-            var scriptElement = document.createElement('script');                    
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-        </script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p id="desc-text">
+                    In this project, I downloaded <a href='https://s3.amazonaws.com/tripdata/index.html'>CitiBike Trip History Data</a> for January and February 2018. 
+                    I cleaned up and combined the data sets using Pandas and saved the data into a csv file. Using Tableau, I built different dashboards that shows popularity of stations, analysis of peak hours and bike usage by demographics and user types.   
+                </p>
+            </div>
+
+            <div class="col-md-12">
+                <h4>My Experience</h4>
+                <p>
+                    Aside from small exercises, this is the first project on Tableau that I've done. I love Tableau for how easy it is to use but with the convenience, I feel like I had to give up some control.
+                    I played around with calculated fields, aliases, filters and actions. There were a lot of points where I got frustrated but I am satisfied with the end result. One thing I noticed with Tableau is that 
+                    because it is so easy to build charts just by dragging and dropping the pills, I sometimes had to step back and check if the chart is showing what I want it to show.
+                </p>
+            </div>
+            
+            <!-- embedding Tableau viz -->
+            <div class='tableauPlaceholder col-md-12' id='viz1548918497460' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;8Z&#47;8Z959KNSW&#47;1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;8Z959KNSW' /> 
+                    <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;8Z&#47;8Z959KNSW&#47;1.png' /> 
+                    <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                </object>
+            </div>                
+            <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1548918497460');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                vizElement.style.width='1016px';vizElement.style.height='991px';                    
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+            <!-- <div class='tableauPlaceholder' id='viz1548909268701' style='position: relative'>
+                <noscript>
+                    <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYCitiBikes2018Q1&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NYCitiBikes2018Q1&#47;Dashboard1' />
+                <param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYCitiBikes2018Q1&#47;Dashboard1&#47;1.png' /> 
+                <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' />
+                </object>
+            </div>                
+            <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1548909268701');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';
+                vizElement.style.maxHeight='887px';
+                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script> -->
+        </div>
     </div>
-    
+
     <script src="static/js/scripts.js"></script>
 </body>
 </html>
