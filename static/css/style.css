@@ -5,7 +5,14 @@ body {
   }
 
 .navbar {
-    background-color: slategrey;
+
+}
+
+.jumbotron {
+    background-image: url("../../resources/img/cycleview.jpg");
+    background-size: 100% 135%;
+    height: 600px;
+    background-position: center bottom;
 }
 
 #desc-text {
