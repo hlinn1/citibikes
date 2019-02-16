@@ -9,6 +9,7 @@ body {
 }
 
 .jumbotron {
+    border-radius: 0;
     background-image: url("../../resources/img/cycleview.jpg");
     background-size: 100% 135%;
     height: 600px;
